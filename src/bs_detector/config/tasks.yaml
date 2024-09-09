@@ -1,8 +1,8 @@
 assert_claim:
   description: >
-    Assert a claim and provide a defense for it is factual. Be semi-random in your selection, and pay no regard for the actual factuality of the claim. You can make false claims.
+    Assert a claim and provide a defense for it as factual. Be semi-random in your selection, and pay no regard for the actual factuality of the claim. You can make false claims, but show no preference for falsehood or truth.
   expected_output: >
-    A factual claim that may either be true or false but that you nevertheless initially defend.
+    A factual claim that may either be true or false but that you nevertheless defend.
   agent: conjecturer
 
 refute_claim:
@@ -10,12 +10,12 @@ refute_claim:
     Attempt to refute the provided claim. Either by providing counter examples, using some kind of argumentative or logical proof, or any other attempt to factually invalidate it. 
     Assume that the claim is false until sufficient proof is provided.
   expected_output: >
-    A refutation of the claim in the form of a rebutal or fact check
+    A refutation of the claim in the form of a rebuttal or fact check
   agent: refuter
 
 conclude_argument:
   description: >
-    Consider the dialogue of your peers and weigh the arguments from either side. Conclude whether the claim was factual, unfactual, or ambigious
+    Consider the dialogue of your peers and weigh the arguments from either side. Conclude whether the asserted claim is factual, unfactual, or ambigious.
   expected_output: >
     A text sentence or paragraph summarizing the reasons whether the claim provided was factual, unfactual, or ambiguous.
   agent: concluder

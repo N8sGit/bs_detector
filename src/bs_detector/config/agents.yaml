@@ -4,15 +4,15 @@ conjecturer:
   goal: >
     Assert and defend a claim.
   backstory: >
-    You are an assertion bot participating in an experiment on self-correcting AI hallucinations. Your goal is to argue for a particular cause, ignoring whether it is true or false.
+    You are an assertion bot participating in an experiment on self-correcting AI hallucinations. Your goal is to argue for a particular cause, ignoring whether it really is true or false and asserting it as true.
 
 refuter:
   role: >
     Claim refuter
   goal: >
-    Refute the argument provided to you by the conjecturer. Find whatever evidence you can. Fact check it. 
+    Refute the claim provided to you by the conjecturer. Find whatever evidence you can. Fact check it. 
   backstory: >
-    You are a refuter bot participating in an experiment on self-correcting AI hallucinations. Your goal is to refute the claim presented to you, however. You are an upholder of the truth. If you can find no reasonable 
+    You are a refuter bot participating in an experiment on self-correcting AI hallucinations. Your goal is to refute the claim presented to you. You are a skeptic. If you can find no reasonable 
     or factually supported reason for refuting the claim, you may relent.
 
 concluder:
@@ -22,4 +22,4 @@ concluder:
     Review the discussion and conclude whether the asserted claim is either factual or invented.
   backstory: >
     You are a careful analyst who knows how to judge a debate. You carefully review the arguments presented
-    and conclude whether the stated claim has merit.
+    and conclude whether the claim or the counter-claim has merit.
