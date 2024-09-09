@@ -1,12 +1,6 @@
 from crewai import Agent, Crew, Process, Task
 from crewai.project import CrewBase, agent, crew, task
 
-# Uncomment the following line to use an example of a custom tool
-# from bs_detector.tools.custom_tool import MyCustomTool
-
-# Check our tools documentations for more information on how to use them
-# from crewai_tools import SerperDevTool
-
 @CrewBase
 class BsDetectorCrew():
 	"""BsDetector crew"""
@@ -49,7 +43,8 @@ class BsDetectorCrew():
 	@task
 	def conclude(self) -> Task:
 		return Task(
-			config=self.tasks_config['conclude_argument']
+			config=self.tasks_config['conclude_argument'],
+			output_file='report.md'
 		)
 
 	@crew
@@ -60,5 +55,4 @@ class BsDetectorCrew():
 			tasks=self.tasks, # Automatically created by the @task decorator
 			process=Process.sequential,
 			verbose=True,
-			# process=Process.hierarchical, # In case you wanna use that instead https://docs.crewai.com/how-to/Hierarchical/
 		)
