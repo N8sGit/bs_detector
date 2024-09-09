@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "bs_detector"
+version = "0.1.0"
+description = "BS_detector using crewAI"
+authors = ["Your Name <you@example.com>"]
+
+[tool.poetry.dependencies]
+python = ">=3.10,<=3.13"
+crewai = { extras = ["tools"], version = "^0.51.0" }
+
+[tool.poetry.scripts]
+bs_detector = "bs_detector.main:run"
+run_crew = "bs_detector.main:run"
+train = "bs_detector.main:train"
+replay = "bs_detector.main:replay"
+test = "bs_detector.main:test"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
