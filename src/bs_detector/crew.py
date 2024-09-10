@@ -11,14 +11,16 @@ class BsDetectorCrew():
 	def conjecturer(self) -> Agent:
 		return Agent(
 			config=self.agents_config['conjecturer'],
-			verbose=True
+			verbose=True,
+			allow_delegation=True
 		)
 
 	@agent
 	def refuter(self) -> Agent:
 		return Agent(
 			config=self.agents_config['refuter'],
-			verbose=True
+			verbose=True,
+			allow_delegation=True,
 		)
 	
 	@agent
