@@ -1,5 +1,5 @@
 # BSDetector
-\* **A cure for model hallucination**
+\* **A cure for AI hallucination**
 
 ## What is this?
 BSDetector is a fun little experiment on model hallucination. It's somewhat inspired by generative adversarial network (GAN) models and the Karl Popper's conjecture-refutation approach to the philosophy of science. 
