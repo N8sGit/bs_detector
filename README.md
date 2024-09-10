@@ -1,4 +1,4 @@
-# BSDetector
+# BS_Detector
 \* **A cure for AI hallucination**
 
 ## What is this?
